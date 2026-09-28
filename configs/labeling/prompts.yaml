@@ -1,0 +1,53 @@
+# Prompt Engineering Variations for Desk Kit Objects
+# Each class contains 4 prompt variations to test zero-shot sensitivity
+classes:
+  - id: 0
+    name: screwdriver
+    prompts:
+      default: "a screwdriver"
+      descriptive: "a red-handled hand screwdriver tool"
+      minimal: "screwdriver"
+      contextual: "a manual screwdriver tool lying on the workbench"
+
+  - id: 1
+    name: tape_roll
+    prompts:
+      default: "a roll of tape"
+      descriptive: "a roll of green adhesive tape"
+      minimal: "tape roll"
+      contextual: "an adhesive masking tape roll on the table"
+
+  - id: 2
+    name: sensor_module
+    prompts:
+      default: "a small electronic sensor module"
+      descriptive: "a small green printed circuit board breakout sensor"
+      minimal: "sensor module"
+      contextual: "an electronic sensor PCB board"
+
+  - id: 3
+    name: usb_cable
+    prompts:
+      default: "a USB cable"
+      descriptive: "a black coiled USB cable cord"
+      minimal: "usb cable"
+      contextual: "a USB connector wire lying on the mat"
+
+  - id: 4
+    name: multimeter
+    prompts:
+      default: "a yellow multimeter"
+      descriptive: "a digital multimeter voltage tester device"
+      minimal: "multimeter"
+      contextual: "an electrical digital multimeter on the desk"
+
+  - id: 5
+    name: pliers
+    prompts:
+      default: "a pair of pliers"
+      descriptive: "a pair of blue needle-nose pliers"
+      minimal: "pliers"
+      contextual: "a metal wire cutting pliers tool"
+
+# Active prompt set for production ensemble labeling
+active_set: "descriptive"

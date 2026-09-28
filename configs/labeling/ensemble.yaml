@@ -1,0 +1,13 @@
+# Ensemble Fusion Configuration for Teacher Models
+
+ensemble:
+  method: "wbf"  # Weighted Boxes Fusion
+  weights:
+    owlv2: 1.0
+    grounding_dino: 1.2
+  iou_threshold: 0.55
+  skip_box_threshold: 0.15
+  conf_threshold: 0.25
+  class_agnostic: false
+  sam_refinement: true
+  min_agreement_iou: 0.20

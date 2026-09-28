@@ -303,14 +303,22 @@ class SiviaStore:
 
     def list_labels(
         self,
+        sample_id: int | None = None,
         status: LabelStatusType | None = None,
+        source: LabelSourceType | None = None,
         dataset_version: str | None = None,
     ) -> list[Label]:
         query = "SELECT * FROM labels WHERE 1=1"
         params: list[Any] = []
+        if sample_id is not None:
+            query += " AND sample_id = ?"
+            params.append(sample_id)
         if status:
             query += " AND status = ?"
             params.append(status)
+        if source:
+            query += " AND source = ?"
+            params.append(source)
         if dataset_version:
             query += " AND dataset_version = ?"
             params.append(dataset_version)

@@ -99,3 +99,20 @@ Format: **Context → Options → Decision → Consequence**.
      - Split policy: Partitioning strictly by whole video session ID (70/15/15), freezing the test split permanently.
 - **Decision:** Adopt two-stage session-aware deduplication and session-level splitting.
 - **Consequence:** Zero test leakage, >75% reduction in redundant frames, and strict preservation of diverse recording sessions.
+
+---
+
+## ADR-008: Multi-Teacher Weighted Boxes Fusion (WBF) with SAM Refinement and Parquet Caching
+
+- **Context:** Open-vocabulary object detectors (OWLv2, Grounding DINO) provide zero-shot detection from natural language prompts, but exhibit complementary failure modes (localization jitter, prompt sensitivity, class-specific recall gaps). Relying on a single teacher limits label quality and provides no consensus confidence metric for downstream active learning.
+- **Options Considered:**
+  1. Single teacher (OWLv2 or Grounding DINO alone): Faster inference, but susceptible to single-model errors and provides no agreement baseline.
+  2. Classical Non-Maximum Suppression (NMS): Discards all but the highest-scoring bounding box, discarding spatial localization signal from the second model.
+  3. Weighted Boxes Fusion (WBF) with SAM Refinement:
+     - Combines bounding boxes from OWLv2 and Grounding DINO using confidence-weighted coordinate averaging.
+     - Computes `agreement_iou` (pairwise IoU between contributing teacher boxes) to capture inter-model consensus.
+     - Feeds fused boxes to SAM (Segment Anything) for binary mask generation, RLE encoding, and tight-box alignment (`mask_box_iou`).
+     - Implements Parquet-backed disk caching keyed by `sha256(image_sha + model_id + prompt_hash)` to prevent redundant re-computation.
+- **Decision:** Adopt WBF multi-teacher ensembling with consensus metrics (`agreement_iou`, `mask_box_iou`), SAM instance segmentation, and Parquet caching.
+- **Consequence:** Significantly improves localization accuracy over single teachers, produces COCO-compliant RLE segmentation masks, provides explicit disagreement signals directly consumed by M3 active learning, and guarantees deterministic cached re-runs.
+

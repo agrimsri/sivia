@@ -1,0 +1,62 @@
+{
+  "prompt_sweep_results": {
+    "default": {
+      "mAP_50": 0.1914,
+      "mAP_50_95": 0.1493,
+      "coverage": 0.25,
+      "per_class_ap_50": {
+        "screwdriver": 0.1584,
+        "tape_roll": 0.2178,
+        "sensor_module": 0.2051,
+        "usb_cable": 0.2087,
+        "multimeter": 0.1617,
+        "pliers": 0.1963
+      },
+      "num_predictions": 132
+    },
+    "descriptive": {
+      "mAP_50": 0.2129,
+      "mAP_50_95": 0.1751,
+      "coverage": 0.25,
+      "per_class_ap_50": {
+        "screwdriver": 0.1881,
+        "tape_roll": 0.2376,
+        "sensor_module": 0.2178,
+        "usb_cable": 0.2376,
+        "multimeter": 0.1881,
+        "pliers": 0.2079
+      },
+      "num_predictions": 126
+    },
+    "minimal": {
+      "mAP_50": 0.1845,
+      "mAP_50_95": 0.1343,
+      "coverage": 0.25,
+      "per_class_ap_50": {
+        "screwdriver": 0.1584,
+        "tape_roll": 0.2178,
+        "sensor_module": 0.2004,
+        "usb_cable": 0.1997,
+        "multimeter": 0.1496,
+        "pliers": 0.1808
+      },
+      "num_predictions": 132
+    },
+    "contextual": {
+      "mAP_50": 0.2129,
+      "mAP_50_95": 0.1751,
+      "coverage": 0.25,
+      "per_class_ap_50": {
+        "screwdriver": 0.1881,
+        "tape_roll": 0.2376,
+        "sensor_module": 0.2178,
+        "usb_cable": 0.2376,
+        "multimeter": 0.1881,
+        "pliers": 0.2079
+      },
+      "num_predictions": 126
+    }
+  },
+  "best_prompt_set": "descriptive",
+  "best_mAP_50": 0.2129
+}

@@ -1,0 +1,1412 @@
+{
+  "total_images": 200,
+  "total_annotations": 598,
+  "total_wall_clock_seconds": 12960.61,
+  "total_wall_clock_hours": 3.6,
+  "mean_seconds_per_image": 64.8,
+  "median_seconds_per_image": 65.22,
+  "std_seconds_per_image": 17.57,
+  "mean_seconds_per_box": 21.67,
+  "per_image_timings": [
+    {
+      "image_id": 1,
+      "file_name": "gold_0001.jpg",
+      "boxes_count": 1,
+      "complexity": "hard",
+      "elapsed_seconds": 29.51
+    },
+    {
+      "image_id": 2,
+      "file_name": "gold_0002.jpg",
+      "boxes_count": 1,
+      "complexity": "hard",
+      "elapsed_seconds": 35.59
+    },
+    {
+      "image_id": 3,
+      "file_name": "gold_0003.jpg",
+      "boxes_count": 1,
+      "complexity": "hard",
+      "elapsed_seconds": 34.39
+    },
+    {
+      "image_id": 4,
+      "file_name": "gold_0004.jpg",
+      "boxes_count": 1,
+      "complexity": "hard",
+      "elapsed_seconds": 41.18
+    },
+    {
+      "image_id": 5,
+      "file_name": "gold_0005.jpg",
+      "boxes_count": 3,
+      "complexity": "hard",
+      "elapsed_seconds": 91.04
+    },
+    {
+      "image_id": 6,
+      "file_name": "gold_0006.jpg",
+      "boxes_count": 3,
+      "complexity": "hard",
+      "elapsed_seconds": 82.2
+    },
+    {
+      "image_id": 7,
+      "file_name": "gold_0007.jpg",
+      "boxes_count": 1,
+      "complexity": "hard",
+      "elapsed_seconds": 33.45
+    },
+    {
+      "image_id": 8,
+      "file_name": "gold_0008.jpg",
+      "boxes_count": 2,
+      "complexity": "hard",
+      "elapsed_seconds": 59.67
+    },
+    {
+      "image_id": 9,
+      "file_name": "gold_0009.jpg",
+      "boxes_count": 3,
+      "complexity": "hard",
+      "elapsed_seconds": 89.1
+    },
+    {
+      "image_id": 10,
+      "file_name": "gold_0010.jpg",
+      "boxes_count": 2,
+      "complexity": "hard",
+      "elapsed_seconds": 52.63
+    },
+    {
+      "image_id": 11,
+      "file_name": "gold_0011.jpg",
+      "boxes_count": 4,
+      "complexity": "hard",
+      "elapsed_seconds": 110.98
+    },
+    {
+      "image_id": 12,
+      "file_name": "gold_0012.jpg",
+      "boxes_count": 3,
+      "complexity": "hard",
+      "elapsed_seconds": 95.19
+    },
+    {
+      "image_id": 13,
+      "file_name": "gold_0013.jpg",
+      "boxes_count": 3,
+      "complexity": "hard",
+      "elapsed_seconds": 77.86
+    },
+    {
+      "image_id": 14,
+      "file_name": "gold_0014.jpg",
+      "boxes_count": 4,
+      "complexity": "hard",
+      "elapsed_seconds": 102.18
+    },
+    {
+      "image_id": 15,
+      "file_name": "gold_0015.jpg",
+      "boxes_count": 3,
+      "complexity": "hard",
+      "elapsed_seconds": 75.64
+    },
+    {
+      "image_id": 16,
+      "file_name": "gold_0016.jpg",
+      "boxes_count": 4,
+      "complexity": "hard",
+      "elapsed_seconds": 98.28
+    },
+    {
+      "image_id": 17,
+      "file_name": "gold_0017.jpg",
+      "boxes_count": 1,
+      "complexity": "hard",
+      "elapsed_seconds": 47.35
+    },
+    {
+      "image_id": 18,
+      "file_name": "gold_0018.jpg",
+      "boxes_count": 2,
+      "complexity": "hard",
+      "elapsed_seconds": 61.0
+    },
+    {
+      "image_id": 19,
+      "file_name": "gold_0019.jpg",
+      "boxes_count": 4,
+      "complexity": "hard",
+      "elapsed_seconds": 101.47
+    },
+    {
+      "image_id": 20,
+      "file_name": "gold_0020.jpg",
+      "boxes_count": 2,
+      "complexity": "hard",
+      "elapsed_seconds": 60.37
+    },
+    {
+      "image_id": 21,
+      "file_name": "gold_0021.jpg",
+      "boxes_count": 3,
+      "complexity": "hard",
+      "elapsed_seconds": 76.81
+    },
+    {
+      "image_id": 22,
+      "file_name": "gold_0022.jpg",
+      "boxes_count": 2,
+      "complexity": "hard",
+      "elapsed_seconds": 65.23
+    },
+    {
+      "image_id": 23,
+      "file_name": "gold_0023.jpg",
+      "boxes_count": 1,
+      "complexity": "hard",
+      "elapsed_seconds": 39.69
+    },
+    {
+      "image_id": 24,
+      "file_name": "gold_0024.jpg",
+      "boxes_count": 3,
+      "complexity": "hard",
+      "elapsed_seconds": 88.25
+    },
+    {
+      "image_id": 25,
+      "file_name": "gold_0025.jpg",
+      "boxes_count": 4,
+      "complexity": "hard",
+      "elapsed_seconds": 94.7
+    },
+    {
+      "image_id": 26,
+      "file_name": "gold_0026.jpg",
+      "boxes_count": 3,
+      "complexity": "hard",
+      "elapsed_seconds": 90.49
+    },
+    {
+      "image_id": 27,
+      "file_name": "gold_0027.jpg",
+      "boxes_count": 3,
+      "complexity": "hard",
+      "elapsed_seconds": 76.0
+    },
+    {
+      "image_id": 28,
+      "file_name": "gold_0028.jpg",
+      "boxes_count": 2,
+      "complexity": "hard",
+      "elapsed_seconds": 64.56
+    },
+    {
+      "image_id": 29,
+      "file_name": "gold_0029.jpg",
+      "boxes_count": 1,
+      "complexity": "hard",
+      "elapsed_seconds": 44.98
+    },
+    {
+      "image_id": 30,
+      "file_name": "gold_0030.jpg",
+      "boxes_count": 1,
+      "complexity": "hard",
+      "elapsed_seconds": 39.26
+    },
+    {
+      "image_id": 31,
+      "file_name": "gold_0031.jpg",
+      "boxes_count": 1,
+      "complexity": "hard",
+      "elapsed_seconds": 33.25
+    },
+    {
+      "image_id": 32,
+      "file_name": "gold_0032.jpg",
+      "boxes_count": 2,
+      "complexity": "hard",
+      "elapsed_seconds": 57.26
+    },
+    {
+      "image_id": 33,
+      "file_name": "gold_0033.jpg",
+      "boxes_count": 4,
+      "complexity": "hard",
+      "elapsed_seconds": 106.67
+    },
+    {
+      "image_id": 34,
+      "file_name": "gold_0034.jpg",
+      "boxes_count": 4,
+      "complexity": "hard",
+      "elapsed_seconds": 109.33
+    },
+    {
+      "image_id": 35,
+      "file_name": "gold_0035.jpg",
+      "boxes_count": 4,
+      "complexity": "hard",
+      "elapsed_seconds": 107.8
+    },
+    {
+      "image_id": 36,
+      "file_name": "gold_0036.jpg",
+      "boxes_count": 4,
+      "complexity": "normal",
+      "elapsed_seconds": 84.31
+    },
+    {
+      "image_id": 37,
+      "file_name": "gold_0037.jpg",
+      "boxes_count": 2,
+      "complexity": "normal",
+      "elapsed_seconds": 37.82
+    },
+    {
+      "image_id": 38,
+      "file_name": "gold_0038.jpg",
+      "boxes_count": 2,
+      "complexity": "normal",
+      "elapsed_seconds": 46.49
+    },
+    {
+      "image_id": 39,
+      "file_name": "gold_0039.jpg",
+      "boxes_count": 4,
+      "complexity": "normal",
+      "elapsed_seconds": 72.12
+    },
+    {
+      "image_id": 40,
+      "file_name": "gold_0040.jpg",
+      "boxes_count": 3,
+      "complexity": "normal",
+      "elapsed_seconds": 54.33
+    },
+    {
+      "image_id": 41,
+      "file_name": "gold_0041.jpg",
+      "boxes_count": 3,
+      "complexity": "normal",
+      "elapsed_seconds": 60.78
+    },
+    {
+      "image_id": 42,
+      "file_name": "gold_0042.jpg",
+      "boxes_count": 2,
+      "complexity": "normal",
+      "elapsed_seconds": 39.31
+    },
+    {
+      "image_id": 43,
+      "file_name": "gold_0043.jpg",
+      "boxes_count": 2,
+      "complexity": "normal",
+      "elapsed_seconds": 39.13
+    },
+    {
+      "image_id": 44,
+      "file_name": "gold_0044.jpg",
+      "boxes_count": 3,
+      "complexity": "normal",
+      "elapsed_seconds": 66.15
+    },
+    {
+      "image_id": 45,
+      "file_name": "gold_0045.jpg",
+      "boxes_count": 2,
+      "complexity": "normal",
+      "elapsed_seconds": 46.38
+    },
+    {
+      "image_id": 46,
+      "file_name": "gold_0046.jpg",
+      "boxes_count": 3,
+      "complexity": "normal",
+      "elapsed_seconds": 65.12
+    },
+    {
+      "image_id": 47,
+      "file_name": "gold_0047.jpg",
+      "boxes_count": 2,
+      "complexity": "normal",
+      "elapsed_seconds": 42.5
+    },
+    {
+      "image_id": 48,
+      "file_name": "gold_0048.jpg",
+      "boxes_count": 2,
+      "complexity": "normal",
+      "elapsed_seconds": 44.6
+    },
+    {
+      "image_id": 49,
+      "file_name": "gold_0049.jpg",
+      "boxes_count": 2,
+      "complexity": "normal",
+      "elapsed_seconds": 43.31
+    },
+    {
+      "image_id": 50,
+      "file_name": "gold_0050.jpg",
+      "boxes_count": 4,
+      "complexity": "normal",
+      "elapsed_seconds": 80.67
+    },
+    {
+      "image_id": 51,
+      "file_name": "gold_0051.jpg",
+      "boxes_count": 4,
+      "complexity": "normal",
+      "elapsed_seconds": 82.13
+    },
+    {
+      "image_id": 52,
+      "file_name": "gold_0052.jpg",
+      "boxes_count": 2,
+      "complexity": "normal",
+      "elapsed_seconds": 50.64
+    },
+    {
+      "image_id": 53,
+      "file_name": "gold_0053.jpg",
+      "boxes_count": 3,
+      "complexity": "normal",
+      "elapsed_seconds": 65.32
+    },
+    {
+      "image_id": 54,
+      "file_name": "gold_0054.jpg",
+      "boxes_count": 3,
+      "complexity": "normal",
+      "elapsed_seconds": 53.97
+    },
+    {
+      "image_id": 55,
+      "file_name": "gold_0055.jpg",
+      "boxes_count": 3,
+      "complexity": "normal",
+      "elapsed_seconds": 70.93
+    },
+    {
+      "image_id": 56,
+      "file_name": "gold_0056.jpg",
+      "boxes_count": 3,
+      "complexity": "normal",
+      "elapsed_seconds": 58.32
+    },
+    {
+      "image_id": 57,
+      "file_name": "gold_0057.jpg",
+      "boxes_count": 4,
+      "complexity": "normal",
+      "elapsed_seconds": 92.99
+    },
+    {
+      "image_id": 58,
+      "file_name": "gold_0058.jpg",
+      "boxes_count": 3,
+      "complexity": "normal",
+      "elapsed_seconds": 55.16
+    },
+    {
+      "image_id": 59,
+      "file_name": "gold_0059.jpg",
+      "boxes_count": 2,
+      "complexity": "normal",
+      "elapsed_seconds": 35.62
+    },
+    {
+      "image_id": 60,
+      "file_name": "gold_0060.jpg",
+      "boxes_count": 2,
+      "complexity": "normal",
+      "elapsed_seconds": 43.74
+    },
+    {
+      "image_id": 61,
+      "file_name": "gold_0061.jpg",
+      "boxes_count": 3,
+      "complexity": "normal",
+      "elapsed_seconds": 57.14
+    },
+    {
+      "image_id": 62,
+      "file_name": "gold_0062.jpg",
+      "boxes_count": 4,
+      "complexity": "normal",
+      "elapsed_seconds": 75.55
+    },
+    {
+      "image_id": 63,
+      "file_name": "gold_0063.jpg",
+      "boxes_count": 2,
+      "complexity": "normal",
+      "elapsed_seconds": 42.74
+    },
+    {
+      "image_id": 64,
+      "file_name": "gold_0064.jpg",
+      "boxes_count": 4,
+      "complexity": "normal",
+      "elapsed_seconds": 78.88
+    },
+    {
+      "image_id": 65,
+      "file_name": "gold_0065.jpg",
+      "boxes_count": 3,
+      "complexity": "normal",
+      "elapsed_seconds": 63.05
+    },
+    {
+      "image_id": 66,
+      "file_name": "gold_0066.jpg",
+      "boxes_count": 4,
+      "complexity": "normal",
+      "elapsed_seconds": 77.8
+    },
+    {
+      "image_id": 67,
+      "file_name": "gold_0067.jpg",
+      "boxes_count": 2,
+      "complexity": "normal",
+      "elapsed_seconds": 36.28
+    },
+    {
+      "image_id": 68,
+      "file_name": "gold_0068.jpg",
+      "boxes_count": 3,
+      "complexity": "normal",
+      "elapsed_seconds": 61.23
+    },
+    {
+      "image_id": 69,
+      "file_name": "gold_0069.jpg",
+      "boxes_count": 4,
+      "complexity": "normal",
+      "elapsed_seconds": 81.36
+    },
+    {
+      "image_id": 70,
+      "file_name": "gold_0070.jpg",
+      "boxes_count": 3,
+      "complexity": "normal",
+      "elapsed_seconds": 74.96
+    },
+    {
+      "image_id": 71,
+      "file_name": "gold_0071.jpg",
+      "boxes_count": 3,
+      "complexity": "normal",
+      "elapsed_seconds": 54.03
+    },
+    {
+      "image_id": 72,
+      "file_name": "gold_0072.jpg",
+      "boxes_count": 3,
+      "complexity": "normal",
+      "elapsed_seconds": 69.5
+    },
+    {
+      "image_id": 73,
+      "file_name": "gold_0073.jpg",
+      "boxes_count": 3,
+      "complexity": "normal",
+      "elapsed_seconds": 65.22
+    },
+    {
+      "image_id": 74,
+      "file_name": "gold_0074.jpg",
+      "boxes_count": 4,
+      "complexity": "normal",
+      "elapsed_seconds": 71.85
+    },
+    {
+      "image_id": 75,
+      "file_name": "gold_0075.jpg",
+      "boxes_count": 2,
+      "complexity": "normal",
+      "elapsed_seconds": 42.15
+    },
+    {
+      "image_id": 76,
+      "file_name": "gold_0076.jpg",
+      "boxes_count": 2,
+      "complexity": "normal",
+      "elapsed_seconds": 52.72
+    },
+    {
+      "image_id": 77,
+      "file_name": "gold_0077.jpg",
+      "boxes_count": 2,
+      "complexity": "normal",
+      "elapsed_seconds": 55.54
+    },
+    {
+      "image_id": 78,
+      "file_name": "gold_0078.jpg",
+      "boxes_count": 2,
+      "complexity": "normal",
+      "elapsed_seconds": 47.85
+    },
+    {
+      "image_id": 79,
+      "file_name": "gold_0079.jpg",
+      "boxes_count": 4,
+      "complexity": "normal",
+      "elapsed_seconds": 74.3
+    },
+    {
+      "image_id": 80,
+      "file_name": "gold_0080.jpg",
+      "boxes_count": 3,
+      "complexity": "normal",
+      "elapsed_seconds": 67.84
+    },
+    {
+      "image_id": 81,
+      "file_name": "gold_0081.jpg",
+      "boxes_count": 4,
+      "complexity": "normal",
+      "elapsed_seconds": 77.37
+    },
+    {
+      "image_id": 82,
+      "file_name": "gold_0082.jpg",
+      "boxes_count": 3,
+      "complexity": "normal",
+      "elapsed_seconds": 56.92
+    },
+    {
+      "image_id": 83,
+      "file_name": "gold_0083.jpg",
+      "boxes_count": 3,
+      "complexity": "normal",
+      "elapsed_seconds": 58.28
+    },
+    {
+      "image_id": 84,
+      "file_name": "gold_0084.jpg",
+      "boxes_count": 2,
+      "complexity": "normal",
+      "elapsed_seconds": 48.28
+    },
+    {
+      "image_id": 85,
+      "file_name": "gold_0085.jpg",
+      "boxes_count": 4,
+      "complexity": "normal",
+      "elapsed_seconds": 81.15
+    },
+    {
+      "image_id": 86,
+      "file_name": "gold_0086.jpg",
+      "boxes_count": 4,
+      "complexity": "normal",
+      "elapsed_seconds": 71.46
+    },
+    {
+      "image_id": 87,
+      "file_name": "gold_0087.jpg",
+      "boxes_count": 4,
+      "complexity": "normal",
+      "elapsed_seconds": 71.86
+    },
+    {
+      "image_id": 88,
+      "file_name": "gold_0088.jpg",
+      "boxes_count": 3,
+      "complexity": "normal",
+      "elapsed_seconds": 55.46
+    },
+    {
+      "image_id": 89,
+      "file_name": "gold_0089.jpg",
+      "boxes_count": 2,
+      "complexity": "normal",
+      "elapsed_seconds": 40.4
+    },
+    {
+      "image_id": 90,
+      "file_name": "gold_0090.jpg",
+      "boxes_count": 4,
+      "complexity": "normal",
+      "elapsed_seconds": 74.34
+    },
+    {
+      "image_id": 91,
+      "file_name": "gold_0091.jpg",
+      "boxes_count": 4,
+      "complexity": "normal",
+      "elapsed_seconds": 78.32
+    },
+    {
+      "image_id": 92,
+      "file_name": "gold_0092.jpg",
+      "boxes_count": 4,
+      "complexity": "normal",
+      "elapsed_seconds": 87.24
+    },
+    {
+      "image_id": 93,
+      "file_name": "gold_0093.jpg",
+      "boxes_count": 4,
+      "complexity": "normal",
+      "elapsed_seconds": 82.62
+    },
+    {
+      "image_id": 94,
+      "file_name": "gold_0094.jpg",
+      "boxes_count": 4,
+      "complexity": "normal",
+      "elapsed_seconds": 85.85
+    },
+    {
+      "image_id": 95,
+      "file_name": "gold_0095.jpg",
+      "boxes_count": 4,
+      "complexity": "normal",
+      "elapsed_seconds": 75.56
+    },
+    {
+      "image_id": 96,
+      "file_name": "gold_0096.jpg",
+      "boxes_count": 4,
+      "complexity": "normal",
+      "elapsed_seconds": 74.79
+    },
+    {
+      "image_id": 97,
+      "file_name": "gold_0097.jpg",
+      "boxes_count": 4,
+      "complexity": "normal",
+      "elapsed_seconds": 78.24
+    },
+    {
+      "image_id": 98,
+      "file_name": "gold_0098.jpg",
+      "boxes_count": 4,
+      "complexity": "normal",
+      "elapsed_seconds": 77.21
+    },
+    {
+      "image_id": 99,
+      "file_name": "gold_0099.jpg",
+      "boxes_count": 3,
+      "complexity": "normal",
+      "elapsed_seconds": 54.82
+    },
+    {
+      "image_id": 100,
+      "file_name": "gold_0100.jpg",
+      "boxes_count": 4,
+      "complexity": "normal",
+      "elapsed_seconds": 91.97
+    },
+    {
+      "image_id": 101,
+      "file_name": "gold_0101.jpg",
+      "boxes_count": 3,
+      "complexity": "normal",
+      "elapsed_seconds": 62.95
+    },
+    {
+      "image_id": 102,
+      "file_name": "gold_0102.jpg",
+      "boxes_count": 2,
+      "complexity": "normal",
+      "elapsed_seconds": 47.84
+    },
+    {
+      "image_id": 103,
+      "file_name": "gold_0103.jpg",
+      "boxes_count": 2,
+      "complexity": "normal",
+      "elapsed_seconds": 47.68
+    },
+    {
+      "image_id": 104,
+      "file_name": "gold_0104.jpg",
+      "boxes_count": 2,
+      "complexity": "normal",
+      "elapsed_seconds": 41.7
+    },
+    {
+      "image_id": 105,
+      "file_name": "gold_0105.jpg",
+      "boxes_count": 4,
+      "complexity": "normal",
+      "elapsed_seconds": 73.71
+    },
+    {
+      "image_id": 106,
+      "file_name": "gold_0106.jpg",
+      "boxes_count": 2,
+      "complexity": "normal",
+      "elapsed_seconds": 50.7
+    },
+    {
+      "image_id": 107,
+      "file_name": "gold_0107.jpg",
+      "boxes_count": 2,
+      "complexity": "normal",
+      "elapsed_seconds": 42.95
+    },
+    {
+      "image_id": 108,
+      "file_name": "gold_0108.jpg",
+      "boxes_count": 4,
+      "complexity": "normal",
+      "elapsed_seconds": 84.91
+    },
+    {
+      "image_id": 109,
+      "file_name": "gold_0109.jpg",
+      "boxes_count": 4,
+      "complexity": "normal",
+      "elapsed_seconds": 82.29
+    },
+    {
+      "image_id": 110,
+      "file_name": "gold_0110.jpg",
+      "boxes_count": 4,
+      "complexity": "normal",
+      "elapsed_seconds": 77.35
+    },
+    {
+      "image_id": 111,
+      "file_name": "gold_0111.jpg",
+      "boxes_count": 4,
+      "complexity": "normal",
+      "elapsed_seconds": 73.7
+    },
+    {
+      "image_id": 112,
+      "file_name": "gold_0112.jpg",
+      "boxes_count": 3,
+      "complexity": "normal",
+      "elapsed_seconds": 75.08
+    },
+    {
+      "image_id": 113,
+      "file_name": "gold_0113.jpg",
+      "boxes_count": 4,
+      "complexity": "normal",
+      "elapsed_seconds": 76.37
+    },
+    {
+      "image_id": 114,
+      "file_name": "gold_0114.jpg",
+      "boxes_count": 4,
+      "complexity": "normal",
+      "elapsed_seconds": 80.07
+    },
+    {
+      "image_id": 115,
+      "file_name": "gold_0115.jpg",
+      "boxes_count": 2,
+      "complexity": "normal",
+      "elapsed_seconds": 44.57
+    },
+    {
+      "image_id": 116,
+      "file_name": "gold_0116.jpg",
+      "boxes_count": 4,
+      "complexity": "normal",
+      "elapsed_seconds": 84.91
+    },
+    {
+      "image_id": 117,
+      "file_name": "gold_0117.jpg",
+      "boxes_count": 2,
+      "complexity": "normal",
+      "elapsed_seconds": 47.16
+    },
+    {
+      "image_id": 118,
+      "file_name": "gold_0118.jpg",
+      "boxes_count": 3,
+      "complexity": "normal",
+      "elapsed_seconds": 59.59
+    },
+    {
+      "image_id": 119,
+      "file_name": "gold_0119.jpg",
+      "boxes_count": 3,
+      "complexity": "normal",
+      "elapsed_seconds": 58.07
+    },
+    {
+      "image_id": 120,
+      "file_name": "gold_0120.jpg",
+      "boxes_count": 4,
+      "complexity": "normal",
+      "elapsed_seconds": 73.29
+    },
+    {
+      "image_id": 121,
+      "file_name": "gold_0121.jpg",
+      "boxes_count": 2,
+      "complexity": "normal",
+      "elapsed_seconds": 34.46
+    },
+    {
+      "image_id": 122,
+      "file_name": "gold_0122.jpg",
+      "boxes_count": 3,
+      "complexity": "normal",
+      "elapsed_seconds": 67.36
+    },
+    {
+      "image_id": 123,
+      "file_name": "gold_0123.jpg",
+      "boxes_count": 4,
+      "complexity": "normal",
+      "elapsed_seconds": 75.52
+    },
+    {
+      "image_id": 124,
+      "file_name": "gold_0124.jpg",
+      "boxes_count": 4,
+      "complexity": "normal",
+      "elapsed_seconds": 75.31
+    },
+    {
+      "image_id": 125,
+      "file_name": "gold_0125.jpg",
+      "boxes_count": 4,
+      "complexity": "normal",
+      "elapsed_seconds": 77.99
+    },
+    {
+      "image_id": 126,
+      "file_name": "gold_0126.jpg",
+      "boxes_count": 3,
+      "complexity": "normal",
+      "elapsed_seconds": 67.49
+    },
+    {
+      "image_id": 127,
+      "file_name": "gold_0127.jpg",
+      "boxes_count": 3,
+      "complexity": "normal",
+      "elapsed_seconds": 67.9
+    },
+    {
+      "image_id": 128,
+      "file_name": "gold_0128.jpg",
+      "boxes_count": 3,
+      "complexity": "normal",
+      "elapsed_seconds": 69.41
+    },
+    {
+      "image_id": 129,
+      "file_name": "gold_0129.jpg",
+      "boxes_count": 3,
+      "complexity": "normal",
+      "elapsed_seconds": 61.57
+    },
+    {
+      "image_id": 130,
+      "file_name": "gold_0130.jpg",
+      "boxes_count": 2,
+      "complexity": "normal",
+      "elapsed_seconds": 40.36
+    },
+    {
+      "image_id": 131,
+      "file_name": "gold_0131.jpg",
+      "boxes_count": 4,
+      "complexity": "normal",
+      "elapsed_seconds": 83.01
+    },
+    {
+      "image_id": 132,
+      "file_name": "gold_0132.jpg",
+      "boxes_count": 3,
+      "complexity": "normal",
+      "elapsed_seconds": 58.45
+    },
+    {
+      "image_id": 133,
+      "file_name": "gold_0133.jpg",
+      "boxes_count": 2,
+      "complexity": "normal",
+      "elapsed_seconds": 44.73
+    },
+    {
+      "image_id": 134,
+      "file_name": "gold_0134.jpg",
+      "boxes_count": 4,
+      "complexity": "normal",
+      "elapsed_seconds": 75.07
+    },
+    {
+      "image_id": 135,
+      "file_name": "gold_0135.jpg",
+      "boxes_count": 3,
+      "complexity": "normal",
+      "elapsed_seconds": 63.12
+    },
+    {
+      "image_id": 136,
+      "file_name": "gold_0136.jpg",
+      "boxes_count": 2,
+      "complexity": "normal",
+      "elapsed_seconds": 52.69
+    },
+    {
+      "image_id": 137,
+      "file_name": "gold_0137.jpg",
+      "boxes_count": 4,
+      "complexity": "normal",
+      "elapsed_seconds": 84.41
+    },
+    {
+      "image_id": 138,
+      "file_name": "gold_0138.jpg",
+      "boxes_count": 4,
+      "complexity": "normal",
+      "elapsed_seconds": 70.79
+    },
+    {
+      "image_id": 139,
+      "file_name": "gold_0139.jpg",
+      "boxes_count": 2,
+      "complexity": "normal",
+      "elapsed_seconds": 48.53
+    },
+    {
+      "image_id": 140,
+      "file_name": "gold_0140.jpg",
+      "boxes_count": 3,
+      "complexity": "normal",
+      "elapsed_seconds": 70.46
+    },
+    {
+      "image_id": 141,
+      "file_name": "gold_0141.jpg",
+      "boxes_count": 3,
+      "complexity": "normal",
+      "elapsed_seconds": 61.67
+    },
+    {
+      "image_id": 142,
+      "file_name": "gold_0142.jpg",
+      "boxes_count": 2,
+      "complexity": "normal",
+      "elapsed_seconds": 38.3
+    },
+    {
+      "image_id": 143,
+      "file_name": "gold_0143.jpg",
+      "boxes_count": 4,
+      "complexity": "normal",
+      "elapsed_seconds": 77.5
+    },
+    {
+      "image_id": 144,
+      "file_name": "gold_0144.jpg",
+      "boxes_count": 4,
+      "complexity": "normal",
+      "elapsed_seconds": 88.38
+    },
+    {
+      "image_id": 145,
+      "file_name": "gold_0145.jpg",
+      "boxes_count": 4,
+      "complexity": "normal",
+      "elapsed_seconds": 80.99
+    },
+    {
+      "image_id": 146,
+      "file_name": "gold_0146.jpg",
+      "boxes_count": 4,
+      "complexity": "normal",
+      "elapsed_seconds": 72.63
+    },
+    {
+      "image_id": 147,
+      "file_name": "gold_0147.jpg",
+      "boxes_count": 3,
+      "complexity": "normal",
+      "elapsed_seconds": 58.2
+    },
+    {
+      "image_id": 148,
+      "file_name": "gold_0148.jpg",
+      "boxes_count": 2,
+      "complexity": "normal",
+      "elapsed_seconds": 41.18
+    },
+    {
+      "image_id": 149,
+      "file_name": "gold_0149.jpg",
+      "boxes_count": 2,
+      "complexity": "normal",
+      "elapsed_seconds": 48.37
+    },
+    {
+      "image_id": 150,
+      "file_name": "gold_0150.jpg",
+      "boxes_count": 3,
+      "complexity": "normal",
+      "elapsed_seconds": 63.45
+    },
+    {
+      "image_id": 151,
+      "file_name": "gold_0151.jpg",
+      "boxes_count": 4,
+      "complexity": "normal",
+      "elapsed_seconds": 76.57
+    },
+    {
+      "image_id": 152,
+      "file_name": "gold_0152.jpg",
+      "boxes_count": 4,
+      "complexity": "normal",
+      "elapsed_seconds": 78.75
+    },
+    {
+      "image_id": 153,
+      "file_name": "gold_0153.jpg",
+      "boxes_count": 2,
+      "complexity": "normal",
+      "elapsed_seconds": 38.77
+    },
+    {
+      "image_id": 154,
+      "file_name": "gold_0154.jpg",
+      "boxes_count": 3,
+      "complexity": "normal",
+      "elapsed_seconds": 64.51
+    },
+    {
+      "image_id": 155,
+      "file_name": "gold_0155.jpg",
+      "boxes_count": 3,
+      "complexity": "normal",
+      "elapsed_seconds": 64.7
+    },
+    {
+      "image_id": 156,
+      "file_name": "gold_0156.jpg",
+      "boxes_count": 4,
+      "complexity": "normal",
+      "elapsed_seconds": 83.03
+    },
+    {
+      "image_id": 157,
+      "file_name": "gold_0157.jpg",
+      "boxes_count": 4,
+      "complexity": "normal",
+      "elapsed_seconds": 75.61
+    },
+    {
+      "image_id": 158,
+      "file_name": "gold_0158.jpg",
+      "boxes_count": 3,
+      "complexity": "normal",
+      "elapsed_seconds": 63.25
+    },
+    {
+      "image_id": 159,
+      "file_name": "gold_0159.jpg",
+      "boxes_count": 4,
+      "complexity": "normal",
+      "elapsed_seconds": 73.63
+    },
+    {
+      "image_id": 160,
+      "file_name": "gold_0160.jpg",
+      "boxes_count": 2,
+      "complexity": "normal",
+      "elapsed_seconds": 43.47
+    },
+    {
+      "image_id": 161,
+      "file_name": "gold_0161.jpg",
+      "boxes_count": 4,
+      "complexity": "normal",
+      "elapsed_seconds": 78.26
+    },
+    {
+      "image_id": 162,
+      "file_name": "gold_0162.jpg",
+      "boxes_count": 4,
+      "complexity": "normal",
+      "elapsed_seconds": 81.49
+    },
+    {
+      "image_id": 163,
+      "file_name": "gold_0163.jpg",
+      "boxes_count": 3,
+      "complexity": "normal",
+      "elapsed_seconds": 71.41
+    },
+    {
+      "image_id": 164,
+      "file_name": "gold_0164.jpg",
+      "boxes_count": 2,
+      "complexity": "normal",
+      "elapsed_seconds": 43.01
+    },
+    {
+      "image_id": 165,
+      "file_name": "gold_0165.jpg",
+      "boxes_count": 2,
+      "complexity": "normal",
+      "elapsed_seconds": 45.67
+    },
+    {
+      "image_id": 166,
+      "file_name": "gold_0166.jpg",
+      "boxes_count": 4,
+      "complexity": "normal",
+      "elapsed_seconds": 78.18
+    },
+    {
+      "image_id": 167,
+      "file_name": "gold_0167.jpg",
+      "boxes_count": 3,
+      "complexity": "normal",
+      "elapsed_seconds": 60.19
+    },
+    {
+      "image_id": 168,
+      "file_name": "gold_0168.jpg",
+      "boxes_count": 3,
+      "complexity": "normal",
+      "elapsed_seconds": 65.9
+    },
+    {
+      "image_id": 169,
+      "file_name": "gold_0169.jpg",
+      "boxes_count": 2,
+      "complexity": "normal",
+      "elapsed_seconds": 44.29
+    },
+    {
+      "image_id": 170,
+      "file_name": "gold_0170.jpg",
+      "boxes_count": 4,
+      "complexity": "normal",
+      "elapsed_seconds": 72.95
+    },
+    {
+      "image_id": 171,
+      "file_name": "gold_0171.jpg",
+      "boxes_count": 3,
+      "complexity": "normal",
+      "elapsed_seconds": 55.87
+    },
+    {
+      "image_id": 172,
+      "file_name": "gold_0172.jpg",
+      "boxes_count": 2,
+      "complexity": "normal",
+      "elapsed_seconds": 47.79
+    },
+    {
+      "image_id": 173,
+      "file_name": "gold_0173.jpg",
+      "boxes_count": 4,
+      "complexity": "normal",
+      "elapsed_seconds": 75.89
+    },
+    {
+      "image_id": 174,
+      "file_name": "gold_0174.jpg",
+      "boxes_count": 4,
+      "complexity": "normal",
+      "elapsed_seconds": 86.81
+    },
+    {
+      "image_id": 175,
+      "file_name": "gold_0175.jpg",
+      "boxes_count": 4,
+      "complexity": "normal",
+      "elapsed_seconds": 87.15
+    },
+    {
+      "image_id": 176,
+      "file_name": "gold_0176.jpg",
+      "boxes_count": 2,
+      "complexity": "normal",
+      "elapsed_seconds": 48.9
+    },
+    {
+      "image_id": 177,
+      "file_name": "gold_0177.jpg",
+      "boxes_count": 4,
+      "complexity": "normal",
+      "elapsed_seconds": 78.11
+    },
+    {
+      "image_id": 178,
+      "file_name": "gold_0178.jpg",
+      "boxes_count": 4,
+      "complexity": "normal",
+      "elapsed_seconds": 75.0
+    },
+    {
+      "image_id": 179,
+      "file_name": "gold_0179.jpg",
+      "boxes_count": 2,
+      "complexity": "normal",
+      "elapsed_seconds": 41.42
+    },
+    {
+      "image_id": 180,
+      "file_name": "gold_0180.jpg",
+      "boxes_count": 4,
+      "complexity": "normal",
+      "elapsed_seconds": 73.08
+    },
+    {
+      "image_id": 181,
+      "file_name": "gold_0181.jpg",
+      "boxes_count": 2,
+      "complexity": "normal",
+      "elapsed_seconds": 37.33
+    },
+    {
+      "image_id": 182,
+      "file_name": "gold_0182.jpg",
+      "boxes_count": 4,
+      "complexity": "normal",
+      "elapsed_seconds": 79.32
+    },
+    {
+      "image_id": 183,
+      "file_name": "gold_0183.jpg",
+      "boxes_count": 3,
+      "complexity": "normal",
+      "elapsed_seconds": 60.15
+    },
+    {
+      "image_id": 184,
+      "file_name": "gold_0184.jpg",
+      "boxes_count": 4,
+      "complexity": "normal",
+      "elapsed_seconds": 76.7
+    },
+    {
+      "image_id": 185,
+      "file_name": "gold_0185.jpg",
+      "boxes_count": 2,
+      "complexity": "normal",
+      "elapsed_seconds": 45.6
+    },
+    {
+      "image_id": 186,
+      "file_name": "gold_0186.jpg",
+      "boxes_count": 2,
+      "complexity": "normal",
+      "elapsed_seconds": 48.52
+    },
+    {
+      "image_id": 187,
+      "file_name": "gold_0187.jpg",
+      "boxes_count": 3,
+      "complexity": "normal",
+      "elapsed_seconds": 60.53
+    },
+    {
+      "image_id": 188,
+      "file_name": "gold_0188.jpg",
+      "boxes_count": 4,
+      "complexity": "normal",
+      "elapsed_seconds": 63.63
+    },
+    {
+      "image_id": 189,
+      "file_name": "gold_0189.jpg",
+      "boxes_count": 3,
+      "complexity": "normal",
+      "elapsed_seconds": 65.8
+    },
+    {
+      "image_id": 190,
+      "file_name": "gold_0190.jpg",
+      "boxes_count": 3,
+      "complexity": "normal",
+      "elapsed_seconds": 57.18
+    },
+    {
+      "image_id": 191,
+      "file_name": "gold_0191.jpg",
+      "boxes_count": 2,
+      "complexity": "normal",
+      "elapsed_seconds": 50.52
+    },
+    {
+      "image_id": 192,
+      "file_name": "gold_0192.jpg",
+      "boxes_count": 2,
+      "complexity": "normal",
+      "elapsed_seconds": 45.83
+    },
+    {
+      "image_id": 193,
+      "file_name": "gold_0193.jpg",
+      "boxes_count": 4,
+      "complexity": "normal",
+      "elapsed_seconds": 88.59
+    },
+    {
+      "image_id": 194,
+      "file_name": "gold_0194.jpg",
+      "boxes_count": 4,
+      "complexity": "normal",
+      "elapsed_seconds": 69.82
+    },
+    {
+      "image_id": 195,
+      "file_name": "gold_0195.jpg",
+      "boxes_count": 2,
+      "complexity": "normal",
+      "elapsed_seconds": 49.68
+    },
+    {
+      "image_id": 196,
+      "file_name": "gold_0196.jpg",
+      "boxes_count": 2,
+      "complexity": "normal",
+      "elapsed_seconds": 46.62
+    },
+    {
+      "image_id": 197,
+      "file_name": "gold_0197.jpg",
+      "boxes_count": 3,
+      "complexity": "normal",
+      "elapsed_seconds": 55.3
+    },
+    {
+      "image_id": 198,
+      "file_name": "gold_0198.jpg",
+      "boxes_count": 4,
+      "complexity": "normal",
+      "elapsed_seconds": 74.49
+    },
+    {
+      "image_id": 199,
+      "file_name": "gold_0199.jpg",
+      "boxes_count": 3,
+      "complexity": "normal",
+      "elapsed_seconds": 68.35
+    },
+    {
+      "image_id": 200,
+      "file_name": "gold_0200.jpg",
+      "boxes_count": 3,
+      "complexity": "normal",
+      "elapsed_seconds": 61.47
+    }
+  ]
+}

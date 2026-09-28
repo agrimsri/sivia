@@ -1,0 +1,26 @@
+# Teacher Detector Configuration for Zero-Shot Labeling Pipeline
+
+owlv2:
+  model_id: "google/owlv2-base-patch16-ensemble"
+  score_threshold: 0.15
+  batch_size: 4
+  device: "auto"
+  fp16: true
+  cache_dir: "data/cache/owlv2"
+
+grounding_dino:
+  model_id: "IDEA-Research/grounding-dino-tiny"
+  box_threshold: 0.25
+  text_threshold: 0.20
+  batch_size: 4
+  device: "auto"
+  fp16: true
+  cache_dir: "data/cache/gdino"
+
+sam:
+  model_id: "facebook/sam-vit-base"
+  points_per_side: 16
+  pred_iou_thresh: 0.80
+  stability_score_thresh: 0.85
+  device: "auto"
+  cache_dir: "data/cache/sam"
