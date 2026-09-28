@@ -1,0 +1,17 @@
+{
+  "milestone": "M1",
+  "timestamp": "2026-09-28T07:56:41Z",
+  "total_sessions": 20,
+  "raw_sampled_frames": 480,
+  "quality_filtered_frames": 380,
+  "retained_frames_after_dedup": 77,
+  "dedup_reduction_percentage": 79.74,
+  "splits": {
+    "train": 52,
+    "val": 12,
+    "test": 13
+  },
+  "session_overlap": 0,
+  "nearest_neighbor_same_session_ratio": 0.05,
+  "elapsed_seconds": 14.97
+}

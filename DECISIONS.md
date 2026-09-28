@@ -84,3 +84,18 @@ Format: **Context → Options → Decision → Consequence**.
     - M7 ONNX export, INT8 static QDQ quantization, and latency benchmarking
     - M8 FastAPI server, zero-downtime hot-swap, and live camera inspection demo
 - **Consequence:** 100% headless automation from terminal/agents, zero cloud infrastructure cost, access to 15 GB VRAM on demand, and realistic edge deployment benchmarking on local hardware.
+
+---
+
+## ADR-007: Two-Stage Session-Aware Deduplication and Partitioning
+
+- **Context:** Raw continuous video sampling captures high-frequency near-identical frames. Random frame-level train/test splitting leads to catastrophic data leakage (near-identical frames in both train and test splits).
+- **Options Considered:**
+  1. Global clustering deduplication: Collapses diverse sessions if background surfaces match, reducing test set diversity.
+  2. Pure pHash deduplication: Fails to detect semantic duplicates where camera angles or minor lighting changes alter hash bits.
+  3. Two-stage session-aware deduplication + session-level splitting:
+     - Stage 1: pHash exact duplicate pruning within session.
+     - Stage 2: DINOv2 cosine similarity radius pruning (threshold 0.95), retaining the sharpest exemplar per cluster.
+     - Split policy: Partitioning strictly by whole video session ID (70/15/15), freezing the test split permanently.
+- **Decision:** Adopt two-stage session-aware deduplication and session-level splitting.
+- **Consequence:** Zero test leakage, >75% reduction in redundant frames, and strict preservation of diverse recording sessions.
