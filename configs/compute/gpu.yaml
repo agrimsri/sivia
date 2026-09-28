@@ -1,0 +1,19 @@
+profile_name: A_gpu_local
+device: cuda
+gpu_name: "NVIDIA GPU (>=8GB)"
+vram_gb: 8.0
+num_workers: 4
+mixed_precision: true
+img_size: 640
+
+batch_sizes:
+  teacher: 8
+  student_train: 16
+  student_val: 32
+  eval: 32
+
+models:
+  teacher_detector: "google/owlv2-base-patch16-ensemble"
+  teacher_segmenter: "facebook/sam2-hiera-small"
+  student_backbone: "yolo11s"
+  vlm: "Qwen/Qwen2-VL-2B-Instruct"

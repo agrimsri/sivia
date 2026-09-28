@@ -1,0 +1,49 @@
+kit_name: desk_kit_v1
+classes:
+  - id: 0
+    name: screwdriver
+    prompts:
+      - "a screwdriver"
+      - "a red-handled screwdriver"
+  - id: 1
+    name: tape_roll
+    prompts:
+      - "a roll of tape"
+  - id: 2
+    name: sensor_module
+    prompts:
+      - "a small electronic sensor module"
+      - "a breakout board"
+  - id: 3
+    name: usb_cable
+    prompts:
+      - "a USB cable"
+      - "a coiled cable"
+  - id: 4
+    name: multimeter
+    prompts:
+      - "a yellow multimeter"
+  - id: 5
+    name: pliers
+    prompts:
+      - "a pair of pliers"
+
+required:
+  - screwdriver
+  - tape_roll
+  - sensor_module
+  - usb_cable
+
+optional:
+  - multimeter
+  - pliers
+
+slots:
+  screwdriver: [0.05, 0.10, 0.45, 0.35]
+  sensor_module: [0.55, 0.10, 0.95, 0.45]
+
+rules:
+  min_score: 0.35
+  max_count:
+    screwdriver: 1
+    multimeter: 1

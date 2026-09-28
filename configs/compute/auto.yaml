@@ -1,0 +1,24 @@
+hardware:
+  platform: Linux-7.0.0-31-generic-x86_64-with-glibc2.39
+  cpu_model: 12th Gen Intel(R) Core(TM) i5-12450H
+  cpu_cores_logical: 12
+  cpu_cores_physical: 8
+  ram_gb: 15.28
+  gpu_available: true
+  gpu_name: NVIDIA GeForce RTX 3050 Laptop GPU
+  vram_gb: 3.68
+  cuda_version: '13.0'
+compute:
+  chosen_profile: C
+  profile_name: C_cpu_only
+  device: cpu
+  mixed_precision: false
+  img_size: 416
+  num_workers: 2
+  batch_sizes:
+    teacher: 1
+    student_train: 4
+    student_val: 8
+    eval: 8
+  decision_reason: CPU-only execution selected (no dedicated GPU detected with >=
+    4 GB VRAM).

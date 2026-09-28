@@ -1,0 +1,19 @@
+profile_name: B_colab_cloud_gpu
+device: cuda
+gpu_name: "NVIDIA T4 / V100 / A100"
+vram_gb: 15.0
+num_workers: 2
+mixed_precision: true
+img_size: 640
+
+batch_sizes:
+  teacher: 4
+  student_train: 16
+  student_val: 32
+  eval: 32
+
+models:
+  teacher_detector: "google/owlv2-base-patch16-ensemble"
+  teacher_segmenter: "facebook/sam2-hiera-small"
+  student_backbone: "yolo11s"
+  vlm: "Qwen/Qwen2-VL-2B-Instruct"

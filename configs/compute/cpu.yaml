@@ -1,0 +1,19 @@
+profile_name: C_cpu_only
+device: cpu
+gpu_name: null
+vram_gb: 0.0
+num_workers: 2
+mixed_precision: false
+img_size: 416
+
+batch_sizes:
+  teacher: 1
+  student_train: 4
+  student_val: 8
+  eval: 8
+
+models:
+  teacher_detector: "google/owlvit-base-patch32"
+  teacher_segmenter: "dh/MobileSAM"
+  student_backbone: "yolo11n"
+  vlm: "HuggingFaceTB/SmolVLM-500M-Instruct"

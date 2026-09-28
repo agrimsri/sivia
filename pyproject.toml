@@ -1,0 +1,180 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "sivia"
+version = "0.1.0"
+description = "Self-Improving Visual Inspection Agent (SIVIA)"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "Apache-2.0" }
+authors = [
+    { name = "Agrim Srivastava" }
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "numpy>=1.26.0",
+    "torch>=2.2.0",
+    "torchvision>=0.17.0",
+    "opencv-python-headless>=4.9.0",
+    "pillow>=10.2.0",
+    "pydantic>=2.6.0",
+    "pyyaml>=6.0.1",
+    "hydra-core>=1.3.2",
+    "omegaconf>=2.3.0",
+    "rich>=13.7.0",
+    "tqdm>=4.66.0",
+    "mlflow>=2.11.0",
+]
+
+[project.optional-dependencies]
+core = [
+    "numpy>=1.26.0",
+    "torch>=2.2.0",
+    "torchvision>=0.17.0",
+    "opencv-python-headless>=4.9.0",
+    "pillow>=10.2.0",
+    "pydantic>=2.6.0",
+    "pyyaml>=6.0.1",
+    "hydra-core>=1.3.2",
+    "omegaconf>=2.3.0",
+    "rich>=13.7.0",
+    "tqdm>=4.66.0",
+    "mlflow>=2.11.0",
+]
+labeling = [
+    "transformers>=4.40.0",
+    "accelerate>=0.28.0",
+    "pycocotools>=2.0.7",
+    "ensemble-boxes>=1.0.9",
+    "timm>=0.9.16",
+]
+train = [
+    "ultralytics>=8.1.0",
+    "albumentations>=1.4.0",
+    "torchmetrics>=1.3.0",
+]
+serve = [
+    "fastapi>=0.110.0",
+    "uvicorn>=0.28.0",
+    "python-multipart>=0.0.9",
+    "onnx>=1.15.0",
+    "onnxruntime>=1.17.0",
+]
+monitor = [
+    "scipy>=1.12.0",
+    "scikit-learn>=1.4.0",
+    "faiss-cpu>=1.8.0",
+    "prometheus-client>=0.20.0",
+]
+dev = [
+    "pytest>=8.0.0",
+    "pytest-cov>=4.1.0",
+    "ruff>=0.3.0",
+    "mypy>=1.9.0",
+    "pre-commit>=3.6.0",
+    "types-PyYAML",
+    "dvc>=3.48.0",
+]
+all = [
+    "sivia[core,labeling,train,serve,monitor,dev]",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0.0",
+    "pytest-cov>=4.1.0",
+    "ruff>=0.3.0",
+    "mypy>=1.9.0",
+    "pre-commit>=3.6.0",
+    "types-PyYAML",
+    "dvc>=3.48.0",
+]
+core = [
+    "numpy>=1.26.0",
+    "torch>=2.2.0",
+    "torchvision>=0.17.0",
+    "opencv-python-headless>=4.9.0",
+    "pillow>=10.2.0",
+    "pydantic>=2.6.0",
+    "pyyaml>=6.0.1",
+    "hydra-core>=1.3.2",
+    "omegaconf>=2.3.0",
+    "rich>=13.7.0",
+    "tqdm>=4.66.0",
+    "mlflow>=2.11.0",
+]
+labeling = [
+    "transformers>=4.40.0",
+    "accelerate>=0.28.0",
+    "pycocotools>=2.0.7",
+    "ensemble-boxes>=1.0.9",
+    "timm>=0.9.16",
+]
+train = [
+    "ultralytics>=8.1.0",
+    "albumentations>=1.4.0",
+    "torchmetrics>=1.3.0",
+]
+serve = [
+    "fastapi>=0.110.0",
+    "uvicorn>=0.28.0",
+    "python-multipart>=0.0.9",
+    "onnx>=1.15.0",
+    "onnxruntime>=1.17.0",
+]
+monitor = [
+    "scipy>=1.12.0",
+    "scikit-learn>=1.4.0",
+    "faiss-cpu>=1.8.0",
+    "prometheus-client>=0.20.0",
+]
+
+[project.scripts]
+sivia = "sivia.cli:main"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = [
+    "E",   # pycodestyle errors
+    "W",   # pycodestyle warnings
+    "F",   # pyflakes
+    "I",   # isort
+    "B",   # flake8-bugbear
+    "C4",  # flake8-comprehensions
+    "UP",  # pyupgrade
+]
+ignore = [
+    "E501",  # line too long (handled by ruff format)
+    "B008",  # do not perform function calls in argument defaults (FastAPI Depends)
+]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+
+[tool.pytest.ini_options]
+minversion = "8.0"
+addopts = "-ra -q --durations=10"
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+
+[tool.mypy]
+python_version = "3.11"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = false
+ignore_missing_imports = true

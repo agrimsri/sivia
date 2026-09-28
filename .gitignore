@@ -1,0 +1,101 @@
+# ==========================================
+# Agent Specific / Private Planning
+# ==========================================
+ROADMAP.md
+.gemini/
+.antigravity/
+.cursor/
+*.agent
+scratch/
+
+# ==========================================
+# Python & Bytecode
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# ==========================================
+# Virtual Environments
+# ==========================================
+.venv/
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+
+# ==========================================
+# Testing & Code Quality
+# ==========================================
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.hypothesis/
+.ruff_cache/
+.mypy_cache/
+
+# ==========================================
+# MLflow & Experiment Tracking
+# ==========================================
+mlflow.db
+mlruns/
+.mlflow/
+outputs/
+multirun/
+
+# ==========================================
+# DVC & Large Datasets / Weights
+# ==========================================
+/data/raw/
+/data/interim/
+/data/processed/
+/data/datasets/
+/data/gold/
+/data/cache/
+*.npy
+*.npz
+*.parquet
+*.h5
+*.hdf5
+*.onnx
+*.engine
+*.pt
+*.pth
+*.bin
+*.sqlite
+*.db
+!tests/fixtures/
+!src/sivia/store/schema.sql
+
+# ==========================================
+# IDE & System Files
+# ==========================================
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
+*~

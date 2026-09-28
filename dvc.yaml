@@ -1,0 +1,8 @@
+stages:
+  probe_hardware:
+    cmd: python scripts/probe_hardware.py --output configs/compute/auto.yaml
+    deps:
+      - scripts/probe_hardware.py
+    outs:
+      - configs/compute/auto.yaml:
+          cache: false
