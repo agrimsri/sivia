@@ -66,10 +66,21 @@ Format: **Context → Options → Decision → Consequence**.
 
 ## ADR-006: Headless Cloud GPU Execution via `colab` CLI (Profile B)
 
-- **Context:** Heavy training and zero-shot foundation teacher labeling (OWLv2, Grounding DINO, SAM 2) require >= 8–15 GB VRAM. The local laptop GPU has 3.68 GB VRAM.
+- **Context:** Heavy training and zero-shot foundation teacher labeling (OWLv2, Grounding DINO, SAM 2) require >= 8–15 GB VRAM. The local laptop GPU has 3.68 GB usable VRAM, which limits batch size and risks CUDA out-of-memory errors on heavy vision-foundation models.
 - **Options Considered:**
-  1. Manual web browser Colab notebooks: Requires copy-pasting files, manual downloads, and manual web UI interaction.
-  2. Paid cloud instances (AWS EC2 / GCP Compute Engine): Recurring cloud bill, credentials setup, and egress costs.
-  3. Headless `colab` CLI (`colab new`, `colab exec`, `colab run`, `colab download`): Direct command-line provisioning of free-tier Tesla T4 GPUs (15 GB VRAM) from local terminal/agent scripts.
-- **Decision:** Standardize Profile B compute on the `colab` CLI. Use `colab new -s sivia-gpu --gpu T4` (or `colab run --gpu T4`) for heavy teacher labeling and student distillation, downloading artifacts back into local storage, while keeping lightweight inspection, serving, and monitoring local.
-- **Consequence:** 100% headless automation with zero cloud spend, 15 GB remote VRAM access on demand, and seamless artifact synchronization.
+  1. Manual web browser Colab notebooks: Requires manual browser UI interaction, copying code cells, and manual file uploads/downloads.
+  2. Local-only execution (Profile C): Constrains models to smaller variants (OWL-ViT base, MobileSAM) and nano detectors, increasing training wall-clock time.
+  3. Paid cloud VMs (AWS EC2 / GCP Compute Engine): Adds recurring cloud cost, IAM credential overhead, and network configuration.
+  4. Headless `colab` CLI (`colab new`, `colab exec`, `colab run`, `colab download`): Direct command-line provisioning of free-tier Tesla T4 GPUs (15,360 MiB / 15 GB VRAM) directly from terminal scripts.
+- **Decision:** Standardize Profile B compute on the `colab` CLI (`/home/agrim/.local/bin/colab`). Verified live on-device with Tesla T4 allocation (`colab new -s sivia-gpu --gpu T4`).
+  - **Heavy Workloads (Remote Colab via CLI):**
+    - M2 Teacher zero-shot auto-labeling (`colab exec -s sivia-gpu -f scripts/run_teacher.py`)
+    - M4 / M5 Student detector distillation (`colab run --gpu T4 scripts/train_student.py`)
+    - Ephemeral artifact download (`colab download -s sivia-gpu /content/sivia/models/student.pt models/`)
+    - Session termination to preserve compute (`colab stop -s sivia-gpu`)
+  - **Edge Workloads (Local CPU/GPU):**
+    - M1 Video capture, frame sampling, Laplacian blur filter
+    - M3 Active learning uncertainty ranking & review queue
+    - M7 ONNX export, INT8 static QDQ quantization, and latency benchmarking
+    - M8 FastAPI server, zero-downtime hot-swap, and live camera inspection demo
+- **Consequence:** 100% headless automation from terminal/agents, zero cloud infrastructure cost, access to 15 GB VRAM on demand, and realistic edge deployment benchmarking on local hardware.
