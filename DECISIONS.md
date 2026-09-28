@@ -61,3 +61,15 @@ Format: **Context → Options → Decision → Consequence**.
   2. Install CPU-only PyTorch wheel (`--index-url https://download.pytorch.org/whl/cpu`): Downloads only ~150 MB.
 - **Decision:** Explicitly install the CPU wheel index in CI prior to installing project dependencies.
 - **Consequence:** GitHub Actions CI job completes in under 60 seconds.
+
+---
+
+## ADR-006: Headless Cloud GPU Execution via `colab` CLI (Profile B)
+
+- **Context:** Heavy training and zero-shot foundation teacher labeling (OWLv2, Grounding DINO, SAM 2) require >= 8–15 GB VRAM. The local laptop GPU has 3.68 GB VRAM.
+- **Options Considered:**
+  1. Manual web browser Colab notebooks: Requires copy-pasting files, manual downloads, and manual web UI interaction.
+  2. Paid cloud instances (AWS EC2 / GCP Compute Engine): Recurring cloud bill, credentials setup, and egress costs.
+  3. Headless `colab` CLI (`colab new`, `colab exec`, `colab run`, `colab download`): Direct command-line provisioning of free-tier Tesla T4 GPUs (15 GB VRAM) from local terminal/agent scripts.
+- **Decision:** Standardize Profile B compute on the `colab` CLI. Use `colab new -s sivia-gpu --gpu T4` (or `colab run --gpu T4`) for heavy teacher labeling and student distillation, downloading artifacts back into local storage, while keeping lightweight inspection, serving, and monitoring local.
+- **Consequence:** 100% headless automation with zero cloud spend, 15 GB remote VRAM access on demand, and seamless artifact synchronization.
