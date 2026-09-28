@@ -5408,6 +5408,7 @@ core = [
 ]
 dev = [
     { name = "dvc" },
+    { name = "faiss-cpu" },
     { name = "mypy" },
     { name = "pre-commit" },
     { name = "pytest" },
@@ -5460,6 +5461,7 @@ core = [
 ]
 dev = [
     { name = "dvc" },
+    { name = "faiss-cpu" },
     { name = "mypy" },
     { name = "pre-commit" },
     { name = "pytest" },
@@ -5501,6 +5503,7 @@ requires-dist = [
     { name = "av", specifier = ">=11.0.0" },
     { name = "dvc", marker = "extra == 'dev'", specifier = ">=3.48.0" },
     { name = "ensemble-boxes", marker = "extra == 'labeling'", specifier = ">=1.0.9" },
+    { name = "faiss-cpu", marker = "extra == 'dev'", specifier = ">=1.8.0" },
     { name = "faiss-cpu", marker = "extra == 'monitor'", specifier = ">=1.8.0" },
     { name = "fastapi", marker = "extra == 'serve'", specifier = ">=0.110.0" },
     { name = "hydra-core", specifier = ">=1.3.2" },
@@ -5567,6 +5570,7 @@ core = [
 ]
 dev = [
     { name = "dvc", specifier = ">=3.48.0" },
+    { name = "faiss-cpu", specifier = ">=1.8.0" },
     { name = "mypy", specifier = ">=1.9.0" },
     { name = "pre-commit", specifier = ">=3.6.0" },
     { name = "pytest", specifier = ">=8.0.0" },

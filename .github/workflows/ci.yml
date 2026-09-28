@@ -33,7 +33,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          uv pip install --system -e ".[dev,core]"
+          uv pip install --system -e ".[dev,core,monitor]"
 
       - name: Run Ruff Linter & Formatter
         run: |

@@ -85,6 +85,7 @@ dev = [
     "pre-commit>=3.6.0",
     "types-PyYAML",
     "dvc>=3.48.0",
+    "faiss-cpu>=1.8.0",
 ]
 all = [
     "sivia[core,labeling,train,serve,monitor,dev]",
@@ -99,6 +100,7 @@ dev = [
     "pre-commit>=3.6.0",
     "types-PyYAML",
     "dvc>=3.48.0",
+    "faiss-cpu>=1.8.0",
 ]
 core = [
     "numpy>=1.26.0",
